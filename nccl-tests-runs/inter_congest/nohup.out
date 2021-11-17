@@ -1,0 +1,32 @@
+ All reduce output = 10 
+time = 0.000000 MyRank = 2 LocalRank = 2
+ All reduce output = 10 
+time = 0.000000 MyRank = 3 LocalRank = 3
+ All reduce output = 10 
+time = 5220.673340 MyRank = 0 LocalRank = 0
+ All reduce output = 10 
+time = 0.000000 MyRank = 1 LocalRank = 1
+ All reduce output = 10 
+time = 0.000000 MyRank = 7 LocalRank = 3
+ All reduce output = 10 
+time = 5201.837891 MyRank = 8 LocalRank = 0
+ All reduce output = 10 
+time = 0.000000 MyRank = 9 LocalRank = 1
+ All reduce output = 10 
+time = 5203.638184 MyRank = 4 LocalRank = 0
+ All reduce output = 10 
+time = 0.000000 MyRank = 10 LocalRank = 2
+ All reduce output = 10 
+time = 0.000000 MyRank = 5 LocalRank = 1
+ All reduce output = 10 
+time = 0.000000 MyRank = 11 LocalRank = 3
+ All reduce output = 10 
+time = 0.000000 MyRank = 6 LocalRank = 2
+ All reduce output = 10 
+time = 0.000000 MyRank = 14 LocalRank = 2
+ All reduce output = 10 
+time = 0.000000 MyRank = 15 LocalRank = 3
+ All reduce output = 10 
+time = 5204.905762 MyRank = 12 LocalRank = 0
+ All reduce output = 10 
+time = 0.000000 MyRank = 13 LocalRank = 1

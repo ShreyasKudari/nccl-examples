@@ -1,0 +1,51 @@
+# nThread 1 nGpus 1 minBytes 8 maxBytes 134217728 step: 2(factor) warmup iters: 5 iters: 20 validation: 1 
+#
+# Using devices
+#   Rank  0 Pid 112456 on   c005-008 device  0 [0x04] Tesla V100-SXM2-16GB
+#   Rank  1 Pid 112457 on   c005-008 device  1 [0x05] Tesla V100-SXM2-16GB
+#   Rank  2 Pid 112458 on   c005-008 device  2 [0x03] Tesla V100-SXM2-16GB
+#   Rank  3 Pid 112459 on   c005-008 device  3 [0x04] Tesla V100-SXM2-16GB
+#   Rank  4 Pid  37776 on   c005-009 device  0 [0x04] Tesla V100-SXM2-16GB
+#   Rank  5 Pid  37777 on   c005-009 device  1 [0x05] Tesla V100-SXM2-16GB
+#   Rank  6 Pid  37778 on   c005-009 device  2 [0x03] Tesla V100-SXM2-16GB
+#   Rank  7 Pid  37779 on   c005-009 device  3 [0x04] Tesla V100-SXM2-16GB
+#   Rank  8 Pid  25311 on   c005-010 device  0 [0x04] Tesla V100-SXM2-16GB
+#   Rank  9 Pid  25312 on   c005-010 device  1 [0x05] Tesla V100-SXM2-16GB
+#   Rank 10 Pid  25313 on   c005-010 device  2 [0x03] Tesla V100-SXM2-16GB
+#   Rank 11 Pid  25314 on   c005-010 device  3 [0x04] Tesla V100-SXM2-16GB
+#   Rank 12 Pid  23767 on   c005-011 device  0 [0x04] Tesla V100-SXM2-16GB
+#   Rank 13 Pid  23768 on   c005-011 device  1 [0x05] Tesla V100-SXM2-16GB
+#   Rank 14 Pid  23769 on   c005-011 device  2 [0x03] Tesla V100-SXM2-16GB
+#   Rank 15 Pid  23770 on   c005-011 device  3 [0x04] Tesla V100-SXM2-16GB
+#
+#                                                     out-of-place                       in-place          
+#       size         count    type   redop     time   algbw   busbw  error     time   algbw   busbw  error
+#        (B)    (elements)                     (us)  (GB/s)  (GB/s)            (us)  (GB/s)  (GB/s)       
+           8             2   float     sum    63.25    0.00    0.00  4e-07    26.16    0.00    0.00  4e-07
+          16             4   float     sum    59.47    0.00    0.00  4e-07    59.37    0.00    0.00  1e-07
+          32             8   float     sum    26.08    0.00    0.00  2e-07    26.07    0.00    0.00  2e-07
+          64            16   float     sum    26.58    0.00    0.00  2e-07    26.01    0.00    0.00  2e-07
+         128            32   float     sum    27.09    0.00    0.01  2e-07    29.43    0.00    0.01  2e-07
+         256            64   float     sum    27.97    0.01    0.02  6e-08    27.70    0.01    0.02  6e-08
+         512           128   float     sum    29.45    0.02    0.03  6e-08    29.31    0.02    0.03  6e-08
+        1024           256   float     sum    31.36    0.03    0.06  5e-07    31.01    0.03    0.06  5e-07
+        2048           512   float     sum    36.01    0.06    0.11  5e-07    35.46    0.06    0.11  5e-07
+        4096          1024   float     sum    42.25    0.10    0.18  5e-07    42.11    0.10    0.18  5e-07
+        8192          2048   float     sum    83.41    0.10    0.18  5e-07    80.69    0.10    0.19  5e-07
+       16384          4096   float     sum    101.5    0.16    0.30  5e-07    97.00    0.17    0.32  5e-07
+       32768          8192   float     sum    124.7    0.26    0.49  5e-07    122.7    0.27    0.50  5e-07
+       65536         16384   float     sum    103.5    0.63    1.19  5e-07    80.87    0.81    1.52  5e-07
+      131072         32768   float     sum    80.23    1.63    3.06  5e-07    79.60    1.65    3.09  5e-07
+      262144         65536   float     sum    155.6    1.69    3.16  5e-07    151.3    1.73    3.25  5e-07
+      524288        131072   float     sum    233.7    2.24    4.21  5e-07    233.4    2.25    4.21  5e-07
+     1048576        262144   float     sum    317.8    3.30    6.19  5e-07    318.0    3.30    6.18  5e-07
+     2097152        524288   float     sum    441.5    4.75    8.91  5e-07    443.1    4.73    8.88  5e-07
+     4194304       1048576   float     sum    775.5    5.41   10.14  5e-07    749.9    5.59   10.49  5e-07
+     8388608       2097152   float     sum   1345.6    6.23   11.69  5e-07   1348.6    6.22   11.66  5e-07
+    16777216       4194304   float     sum   2618.5    6.41   12.01  5e-07   2626.9    6.39   11.98  5e-07
+    33554432       8388608   float     sum   5197.7    6.46   12.10  5e-07   5167.5    6.49   12.18  5e-07
+    67108864      16777216   float     sum    10273    6.53   12.25  5e-07    10406    6.45   12.09  5e-07
+   134217728      33554432   float     sum    20486    6.55   12.28  5e-07    20588    6.52   12.22  5e-07
+# Out of bounds values : 0 OK
+# Avg bus bandwidth    : 3.95508 
+#
